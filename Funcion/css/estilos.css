@@ -1,0 +1,220 @@
+:root{
+    --color1:black;
+    --size1:35px;
+    --size2:17px;
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+}
+body{
+	background:black;
+	overflow-x: hidden;
+}
+
+/** Navegation Menu **/
+header{
+	width: 100%;
+	position: relative;
+}
+.nav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: transparent;
+	z-index: 999;
+}
+.logo{
+	margin: 10px;
+	width: 200px;
+	height: 200px;
+	padding:60px 60px;
+	display: center ;
+}
+.logo img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/** Bar icon **/
+.bar-icon{
+	position: relative;
+	width: 70px;
+	height: 70px;
+	margin-right: 50px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+.bar-icon span{
+	width: 40px;
+	height: 5px;
+	background:black;
+	position: absolute;
+	transition: 0.5s;
+	transform: translateX(-50%);
+}
+.bar-icon span:nth-child(1){
+    top: 30%;
+    left: 50%;
+    background:white;
+}
+.bar-icon span:nth-child(2){
+    bottom: 30%;
+    left: 50%;
+    background: white;
+}
+.bar-icon.active span:nth-child(1){
+	top: 50%;
+	left: 50%;
+	width: 60%;
+	transform: translate(-50%, -50%) rotate(125deg);
+	background: var(--color1);
+}
+.bar-icon.active span:nth-child(2){
+	top: 50%;
+	left: 50%;
+	width: 60%;
+	transform: translate(-50%, -50%) rotate(225deg);
+	background:black;
+}
+.bar-icon:before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 40px;
+	height: 4px;
+	background:white;
+	transition: 0.5s;
+}
+.bar-icon.active:before{
+	width: 0;
+	height: 0;
+}
+/** bar-icon **/
+
+.container-list{
+	position: absolute;
+	top: 70px;
+	left: 0;
+	width: 0%;
+	overflow: hidden;
+	height: 89.4vh;
+	background: #f1f4df;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container-list .list li{
+	list-style: none;
+	padding:10px 0px;
+}
+.container-list .list li a{
+	position: relative;
+	text-decoration: none;
+	font-size: 2.5em;
+	color:#d8d8d8;
+	font-weight: 700;
+}
+.container-list .list li a:before{
+	content: attr(data-text);
+	position: absolute;
+	top: -2px;
+	width: 100%;
+	color:black;
+	overflow: hidden;
+	white-space: nowrap;
+	transition: 0.5s ease-in-out;
+}
+.container-list .list:hover li a:before{
+	width: 0%;
+}
+.container-list .list li:hover a:before{
+	width: 100%;
+}
+
+/** IMG HEADER **/
+.img-header{
+	position: relative;
+	background: url(../img/fondo-1.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.degradade{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.2);
+}
+.welcome{
+	position: absolute;
+	padding:20px;
+	z-index: 10;
+}
+.welcome h1{
+	font-size: 4em;
+	color: #fff;
+	font-weight: 300;
+}
+
+/** IMG HEADER **/
+
+/** Navegation Menu **/
+
+/** Acerca de **/
+
+
+.info{
+	text-align: left;
+	font-size:18px;
+}
+.acerca-de h2{
+	padding-top:50px;
+	text-align:center;
+	color:purple;
+}
+.acerca-de{
+	padding:20px;
+}
+.acerca-de img{
+	padding-left:100px;
+	padding-bottom:20px;
+}
+.footer{
+	padding-top:30px;
+	padding-bottom:50px;
+	margin:0px;
+	background:black;
+	color:white;
+	text-align: center;
+}
+.conjunto{
+	padding:20px;
+	background:#d8d8d8;
+}
+.acerca-de{
+	background: black;
+}
+.conjunto{
+	text-align: center;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

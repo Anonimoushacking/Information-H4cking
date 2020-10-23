@@ -1,0 +1,248 @@
+/* --------------------------------------------------------------------------------- */
+/* Breakpoints Responsive */
+
+
+@media screen and (max-width:800px){
+
+    .titulo{
+        font-size: 45px;
+    }
+    .contenido-header{
+        flex-direction: column; /* con column-reverse cambia de posicion, lo que se mostraria arriba la hace abajo */
+        justify-content: space-evenly;
+        height: 420px;
+
+
+            
+        /* Esto no pertenece al curso,  */
+        margin-top: 80px;
+    }
+    
+    .contenido-header > img{
+        width: 400px;
+    }
+
+    .textos-header{
+        margin: 0;
+    }
+
+    /* About us */
+    .articulo{
+        width: 45%;
+    }
+    /* Questions */
+
+    .questions{
+        height: 720px;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    
+    .questions > img{
+        width: 400px;
+    }
+
+    .contents-results{
+        flex-direction: column-reverse;
+    }
+
+
+    .results-text > a{
+        margin-bottom: 60px;
+    }
+
+/*     .numbers{ 
+        width: 100%;
+        justify-content: space-between;
+    } */
+
+    .numbers .number {
+        width: 95%;
+    }
+
+
+
+    .results-text h4{
+        font-size: 35px;
+    }
+
+    .results-text{
+        width: 100%;
+    }
+
+
+    /* Services */
+
+    .services{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .box-squils{
+        margin:  0 0 40px 0;
+        width: 100%;
+    }
+    .box-squils h4{
+        width: 500px;
+    }
+    
+    .services > img {
+        width: 400px;
+    }
+
+
+    /* Footer */
+
+    footer{
+        justify-content: space-between;
+    }
+
+    .partFooter{
+        width: 40%;
+        margin-bottom: 40px;
+    }
+
+}
+
+
+
+@media screen and (max-width:600px){
+
+    .titulo{
+        font-size: 35px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .contenido-header{
+        height: 650px;
+
+
+            
+        /* Esto no pertenece al curso,  */
+/*         margin-top: 80px;
+ */    
+
+    }
+
+    .nav{
+        padding: 0 10px;
+    }
+
+    
+    .contenido-header > img{
+        width: 200px;
+    }
+
+
+    .enlaces-header{
+        display: fixed;/* ------------js */
+
+        background: #757F9A;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #D7DDE8, #757F9A); 
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0% at 100% 0);
+
+    }
+    .nav .menudos{
+        -webkit-clip-path: circle(133.8% at 100% 0);
+        clip-path: circle(133.8% at 100% 0);
+
+    }
+
+    .nav .enlaces-header a {
+        color: rgb(23, 71, 71);
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .textos-header{
+        margin: 0;
+    }
+
+    /* About us */
+    .articulo{
+        width: 95%;
+    }
+    /* Questions */
+
+    .questions{
+        height: 720px;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    
+    .questions > img{
+        width: 200px;
+    }
+
+
+    /*  */
+    .contents-results{
+        flex-direction: column-reverse;
+    }
+
+
+    .results-text > a{
+        margin-bottom: 60px;
+    }
+
+    .numbers{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .results-text{
+        width: 100%;
+    }
+
+
+    /* Services */
+
+    .services{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .box-squils{
+        margin:  0 0 40px 0;
+        width: 100%;
+    }
+    .box-squils h4{
+        width: 100%;/* --------------------- */
+    }
+    
+    .services > img {
+        width: 80px;
+    }
+
+
+    /* Footer */
+
+    footer{
+        justify-content: space-between;
+    }
+
+    .partFooter{
+        width: 95%;
+        margin-bottom: 40px;
+    }
+
+}

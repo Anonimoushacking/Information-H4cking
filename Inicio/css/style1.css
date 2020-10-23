@@ -1,0 +1,463 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: rgb(177, 177, 177);
+}
+
+h1,h3,h4,h5,h6{
+    color: rgb(46, 18, 23);
+    font-weight: 300; /* px */
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden; /*overflow: hidden; = corta la parte excedente, así no aparece el scroll h */
+}
+.contenedor1{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+h1{
+    font-size: 50px;
+}
+
+
+.contenedor .header h2{
+    display: inline-block;
+}
+
+
+/* Header */
+header::before{/* Elemento ficticio, crea un espacio antes de poner el header */
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+
+nav{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    height: 80px;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    transition: ease-in-out 0.5s;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between; /* Separacion entre los elementos del nav */
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    padding: 0 40px;
+}
+
+nav .logo{
+    height: 80px;/* id0212 */
+}
+nav .logo img{
+    height: 100%; /* Toma el porcentaje con respecto a los pixeles de: id0212 */
+    vertical-align: top;
+}
+
+.enlaces-header{
+    font-weight: 300;
+}
+
+nav .enlaces-header a{
+    color: rgb(86, 17, 126);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hamburger{
+    width: 80px;
+    height: 80px;
+    background: rgb(142, 60, 153);
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    transition: color 0.5s;
+
+}
+.hamburger > i{
+    font-size: 25px;
+    line-height: 80px;
+}
+
+
+.contenido-header{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido-header > img { /* La imagen que se encuentra dentro de "contenido-header" */
+    width: 550px;
+    animation: ease-in animat 1.5s;
+    padding-left: 10px;
+}
+
+.contenedor .contenido-header img{
+    border-radius: 10%;
+    padding-left: 5%;
+}
+
+@keyframes animat{ /* Animación */
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+.textos-header{
+    margin: 0 0 0 30px;
+}
+
+.contenido-header  p{
+    font-weight: 100;
+    margin-top: 14px;
+    color: rgb(0, 0, 0);
+            
+}
+
+.contenido-header  a{ /* El link de learn more como botón*/
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: rgb(110, 107, 110);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 12px 0;
+    text-decoration: none; 
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, .2); 
+}
+
+.titulo{
+    font-size: 50px;
+}
+
+/* ------------------------------------------------------------ */
+.about-us{
+    background: ghostwhite;
+
+}
+.contenedor-articulo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+.articulo{
+    width: 29%; /* ----------------------------------------------------- */
+    background: aquamarine;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 45px 30px 60px 30px;
+    transition: 0.5s;
+}
+
+.articulo:hover{
+    box-shadow: 0 4px 10px black    ; 
+    background: rgb(167, 215, 255);
+
+
+}
+
+.articulo > i{ /* Circulos con iconos dentro */
+    font-size: 30px;
+    color: aliceblue;
+    background: rgba(84, 5, 148, 0.788);
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(85, 20, 170, 0.356); 
+
+}
+
+.articulo > h3 {
+    font-size: 32px;
+    margin-top: 30px;
+}
+
+.articulo > p{
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+
+.articulo > a{
+/*     background: rgb(110, 107, 110);
+ */    font-weight: 400;
+    text-decoration: none;
+}
+
+.articulo > a:hover{
+    color: darkmagenta;
+    transition: color 5s;
+
+}
+
+
+/* ------------------------------------------------------- */
+/* Questions */
+
+
+
+.questions{ /* singular */
+    /* width: 100%; */
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.questions > img { /* La imagen que se encuentra dentro de "contenido-header" */
+    width: 550px;
+}
+
+.textos-questions{
+    margin: 0 0 0 30px;
+}
+
+.textos-questions p{
+    font-weight: 100;
+    margin-top: 14px;
+    color: rgb(0, 0, 0);
+            
+}
+
+.textos-questions  a{ /* El link de learn more como botón*/
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: rgb(110, 107, 110);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 12px 0;
+    text-decoration: none; 
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, .2); 
+}
+
+/* ------------------------------------------------------ */
+
+/* contenedor 1 */
+
+.results{ 
+    background: rgb(127, 103, 146);
+    padding-top: 30px;
+}
+
+.conten-results{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.numbers{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.numbers .number{
+    width: 45%;
+    color: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 45px 35px;
+    margin-bottom: 20px;
+}
+
+.numbers .number h4{
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.numbers .number p{
+    color: aliceblue;
+    font-weight: 300;
+}
+
+
+.results-text{
+    width: 37%;
+}
+
+.results-text h4{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+
+.results-text p{
+    font-weight: 300;
+    color: aliceblue;
+    margin: 20px 0;
+}
+
+
+
+.results-text a{ /* El link de learn more como botón*/
+    margin: 28px 0 0 0;
+    width: 130px;
+    display: inline-block; /* Sirve para ctivar paddin, margin ... */
+/*     background: rgb(182, 181, 182);
+ */    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 12px 0;
+    text-decoration: none; 
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, .2); 
+    border: 1px solid rgb(255, 255, 255);
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* Services */
+
+.services{
+    display: flex;
+    justify-content: space-between;
+}
+
+.services > img {
+    width: 500px;
+}
+
+.box-skills{
+    margin: 30px 30px 0 0;
+}
+.box-skills h4{
+    font-size: 24px;
+    background: rgb(255, 255, 255);
+    width: 350px;
+    border-radius: 6px;
+    padding: 10px 0 10px 15px;
+    margin-bottom: 10px;
+}
+
+.box-skills i{
+    color: blueviolet;
+    font-size: 20px;
+}
+
+
+/* ---------------------------------------------------------------------------------- */
+/* footer */
+
+footer{
+    background: rgb(66, 66, 68);
+    padding: 60px 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap; /* se pone uno debajo del otro */
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.partFooter{
+    width: 20%;
+    text-align: center;
+}
+
+.partFooter h4{
+    color: beige;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.partFooter a {
+    display: block;/* se pone una debajo del otro */
+    text-decoration: none;
+    color: rgb(168, 168, 168);
+   /*  font-weight: 100; */
+    transition: color .3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.partFooter a:hover{
+    color:rgb(152, 28, 190);
+}
+
+
+.partFooter img{
+    width: 30%;
+    border-radius: 50%;
+}
+
+.partFooter a i{
+    font-size: 30px;
+    display: inline-block;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px; /* para centrar */
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+}
+
+.partFooter .contactme{
+    display: inline-block;
+}
+
+
+/* .social-media */
+.partFooter i:hover{
+    color: rgb(152, 28, 190);
+    background: black;
+    border-color: black;
+}
+
+
+/* --------------------------------------------------------------------------------- */
+/* Breakpoints Responsive */
+/* Style2.css */
+
+
+
+
+
+
+
